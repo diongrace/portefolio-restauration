@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Gourmet</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+</head>
+<body>
+
+    <!-- En-tête avec le logo et le menu de navigation -->
+    <header>
+        <h1>Restaurant Gourmet</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section d'accueil -->
+    <section id="accueil" class="carousel">
+        <div class="carousel-slide">
+            <h2>Bienvenue à Restaurant Gourmet</h2>
+            <p>Un lieu où la qualité des ingrédients rencontre la créativité culinaire.</p>
+        </div>
+        <div class="carousel-slide">
+            <h2>Découvrez nos menus raffinés</h2>
+            <p>Des plats soigneusement préparés avec des ingrédients locaux.</p>
+        </div>
+        <div class="carousel-slide">
+            <h2>Réservez votre table dès maintenant</h2>
+            <p>Venez vivre une expérience culinaire inoubliable.</p>
+        </div>
+    <button class="carousel-button" onclick="afficherMenu()">Voir le menu</button>
+    </section>
+    
+   
+    
+    
+
+    <!-- Section Menu -->
+    <section id="menu">
+        <h2>Notre Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="images/sal.jpeg" alt="Salade César">
+                <div class="menu-text">
+                    <h3>Entrée : Salade César</h3>
+                    <p>Une salade fraîche avec des croûtons maison et une vinaigrette au parmesan.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/b.jpg" alt="Filet de bœuf aux truffes">
+                <div class="menu-text">
+                    <h3>Plat principal : Filet de bœuf aux truffes</h3>
+                    <p>Un filet de bœuf tendre, accompagné d'une sauce aux truffes et de légumes de saison.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/tarte.jpg" alt="Tarte aux pommes maison">
+                <div class="menu-text">
+                    <h3>Dessert : Tarte aux pommes maison</h3>
+                    <p>Une tarte aux pommes délicieusement faite maison, servie avec une boule de glace à la vanille.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Section Galerie -->
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <img src="images/nortu.jpeg" alt="Plat 1">
+        <img src="images/nouritu.jpeg" alt="Plat 2">
+        <img src="images/nture.jpeg" alt="Plat 3">
+        <img src="images/sauc.jpg" alt="Plat 1">
+        <img src="images/nouri.jpeg" alt="Plat 2">
+        <img src="images/bro.jpg" alt="Plat 3">
+    </section>
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Email : contact@restaurantgourmet.com</p>
+        <p>Téléphone : 01 23 45 67 89</p>
+    </section>
+
+    <!-- Fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
