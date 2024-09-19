@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Gourmet</title>
     <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
 
     <!-- En-tête avec le logo et le menu de navigation -->
     <header>
         <h1>Restaurant Gourmet</h1>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#galerie">Galerie</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Ajout des icônes de connexion, panier et recherche -->
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search" title="Recherche"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart" title="Panier"></i></a>
+                <a href="#"><i class="fas fa-user" title="Connexion"></i></a>
+            </div>
+        </div>
     </header>
+    
+    
 
     <!-- Section d'accueil -->
     <section id="accueil" class="carousel">
@@ -82,11 +94,22 @@
         <img src="images/bro.jpg" alt="Plat 3">
     </section>
     <!-- Section Contact -->
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <p>Email : contact@restaurantgourmet.com</p>
-        <p>Téléphone : 01 23 45 67 89</p>
-    </section>
+  <!-- Section Contact avec les logos -->
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Email : contact@restaurantgourmet.com</p>
+    <p>Email : gracedion71@gmail.com</p>
+    <p>Téléphone : 01 71 97 53 54</p>
+
+    <div class="footer-logos">
+        <p>Construit avec :</p>
+        <img src="images/html.png" alt="HTML Logo" title="HTML">
+        <img src="images/jjs.jpg" alt="JavaScript Logo" title="JavaScript">
+        <img src="images/css.png" alt="CSS Logo" title="CSS">
+        
+    </div>
+</section>
+
 
     <!-- Fichier JavaScript -->
     <script src="script.js"></script>

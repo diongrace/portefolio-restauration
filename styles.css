@@ -3,7 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif; /* Typographie élégante */
     margin: 0;
     padding: 0;
-    background-color: #fafafa; /* Couleur de fond douce */
+    background-color: #d5d8d5; /* Couleur de fond douce */
     color: #333;
     line-height: 1.6;
 }
@@ -13,16 +13,20 @@ a {
     color: inherit;
 }
 
+
 /* En-tête */
+/* Style de l'en-tête */
 header {
     background-color: #1c1c1e; /* Couleur sombre pour l'en-tête */
     color: #fff;
     padding: 20px;
-    text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour donner un effet de profondeur */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -32,17 +36,24 @@ header h1 {
     letter-spacing: 2px;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px; /* Ajuster l'espacement entre la navigation et les icônes */
+}
+
+/* Style du menu de navigation */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    gap: 30px; /* Espacement entre les liens */
+    gap: 40px; /* Espacement entre les liens du menu */
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f8f5f5;
     font-size: 1.2rem;
     text-transform: uppercase;
     transition: color 0.3s ease;
@@ -52,6 +63,24 @@ nav ul li a:hover {
     color: #ff6347; /* Couleur d'accentuation au survol */
 }
 
+/* Style des icônes dans l'en-tête */
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: #ff6347; /* Effet de survol pour les icônes */
+}
+
+
+
 /* Section d'accueil */
 /* Section d'accueil */
 /* Section d'accueil */
@@ -59,7 +88,7 @@ nav ul li a:hover {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh; /* Hauteur pleine de la fenêtre */
+    height: 60vh; /* Hauteur pleine de la fenêtre */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,10 +98,10 @@ nav ul li a:hover {
 .carousel-slide {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 90%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    color: white;
+    color: rgb(248, 247, 251);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,7 +126,7 @@ nav ul li a:hover {
 }
 
 .carousel-slide:nth-child(3) {
-    background-image: url('images/reserve.jpeg');
+    background-image: url('images/tchep.jpg');
 }
 
 /* Style du texte */
@@ -129,6 +158,7 @@ nav ul li a:hover {
 }
 
 
+/* Section menu */
 /* Section menu */
 /* Section menu */
 #menu {
@@ -192,10 +222,11 @@ nav ul li a:hover {
 }
 
 
+
 /* Section Galerie */
 #galerie {
     padding: 50px 20px;
-    background-color: #fafafa;
+    background-color: #f7f7f0;
     text-align: center;
 }
 
@@ -219,16 +250,53 @@ nav ul li a:hover {
 }
 
 /* Section contact */
+/* Section Contact */
+/* Section Contact */
 #contact {
     padding: 50px 20px;
     background-color: #1c1c1e;
     color: #fff;
     text-align: center;
+    margin-top: 50px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 #contact p {
     font-size: 1.2rem;
+    margin: 5px 0;
 }
+
+/* Logos dans la section Contact */
+.footer-logos {
+    margin-top: 30px;
+}
+
+.footer-logos p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-logos img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Rend l'image ronde */
+    margin: 0 15px;
+    border: 2px solid #fff; /* Cadre blanc autour des logos */
+    padding: 10px;
+    background-color: #333; /* Fond autour des logos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-logos img:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Effet de lumière au survol */
+}
+
+
 
 /* Effet de défilement doux */
 html {
